@@ -6,3 +6,7 @@ This script can help you add bitmap effect on your own image.
 Before:
 
 ![Before image](https://github.com/JingShing/Python-Bayer-Dithering/blob/main/sample/0.png)
+
+After:
+
+![After image](https://github.com/JingShing/Python-Bayer-Dithering/blob/main/sample/0_dithred.png)
