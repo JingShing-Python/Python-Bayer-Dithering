@@ -22,9 +22,6 @@ if (is_png):
 else:
     image = cv2.imread(source_img_name)
 
-height = image.shape[0]
-width = image.shape[1]
-
 bayerMatrix_8X8_1 = [
                 [0,48,12,60,3,51,15,63],
                 [32,16,44,28,35,19,47,31],
@@ -66,6 +63,8 @@ bayerMatrix_2X2_1 = [
 ]
 
 def process_dither_color(img, matrix):
+    height = img.shape[0]
+    width = img.shape[1]
     matrix_len = len(matrix) - 1
     for row in range(height):
         for col in range(width):
